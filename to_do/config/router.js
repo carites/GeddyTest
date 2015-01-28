@@ -21,6 +21,7 @@ var router = new geddy.RegExpRouter();
 
 router.get('/').to('Main.index');
 router.post('/beibe').to('ToDos.beibe');
+router.post('/login').to('Users.login');
 // Basic routes
 // router.match('/moving/pictures/:id', 'GET').to('Moving.pictures');
 //
@@ -40,4 +41,5 @@ router.post('/beibe').to('ToDos.beibe');
 // });
 
 router.resource('to_dos');
+router.resource('users');
 exports.router = router;

@@ -34,8 +34,20 @@ var config = {
   }
 , hostname: null
 , port: 4000
+// , model: {
+//     defaultAdapter: 'filesystem'
+//   }
 , model: {
-    defaultAdapter: 'filesystem'
+    defaultAdapter: 'mysql'
+  }
+, db: {
+    mysql: {
+      host: 'localhost'
+    , user: 'root'
+    , database: 'provanode'
+    , password: 'root'
+    , port: 8889
+    }
   }
 , sessions: {
     store: 'filesystem'
